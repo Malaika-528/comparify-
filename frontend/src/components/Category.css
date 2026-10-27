@@ -1,0 +1,71 @@
+/* General Page Styling */
+.category-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #002b5b;
+}
+
+/* Categories Section */
+.categories-section {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #204875;
+  font-weight: bold;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 25px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    grid-template-columns: 1fr; /* 1 per row on small mobiles */
+  }
+}
+
+/* Category Card (bright soft blue glow on hover) */
+.category-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  width: 250px;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 10px rgba(6, 70, 139, 0.6); /* Brighter and more spread glow */
+}
+
+.category-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.category-title {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #053770;
+  font-weight: bold;
+}

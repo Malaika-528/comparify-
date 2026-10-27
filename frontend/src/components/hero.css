@@ -1,0 +1,53 @@
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 10;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* 👉 GAP FIX */
+.hero-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 25px;  /* Gap after title */
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 35px;  /* Gap after subtitle */
+  opacity: 0.9;
+}
+
+.hero-button {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
